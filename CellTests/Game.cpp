@@ -148,7 +148,7 @@ void Game::Loop(int LoopX, int LoopY)
 	{
 		
 		BeginDrawing();
-		ClearBackground(GRAY);
+		ClearBackground(BLACK);
 		for (int y = LoopY - 1; y > 0 ; y--)
 		{
 			for (int x = LoopX - 1; x > 0; x--)
@@ -156,7 +156,6 @@ void Game::Loop(int LoopX, int LoopY)
 				switch (ColliosionVector[y][x]->CellData.CellType)
 				{
 				case e_NOTHING: {
-					DrawRectangle((ColliosionVector[y][x]->CellData.x* m_CellSize) - m_CellSize, (ColliosionVector[y][x]->CellData.y* m_CellSize) - m_CellSize, m_CellSize, m_CellSize, BLACK);
 					break;
 				}
 				case e_SAND: {
