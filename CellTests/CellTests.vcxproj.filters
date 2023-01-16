@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Main">
+      <UniqueIdentifier>{232d40ff-f137-40c9-ae41-9081385b8bf9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Main\Main">
+      <UniqueIdentifier>{60f9491f-ab40-4c89-89d0-c46c677d1224}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Main\TypeDefs">
+      <UniqueIdentifier>{90a7ae21-fe52-4ee0-a56c-73a389759c6d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Main\Main\Classes">
+      <UniqueIdentifier>{af7d7b10-3c1f-4049-8bb9-4e243b9e0ad2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp">
+      <Filter>Main\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjectBase.cpp">
+      <Filter>Main\Main\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="Game.cpp">
+      <Filter>Main\Main\Classes</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="InForm.hpp">
+      <Filter>Main\TypeDefs</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjectBase.h">
+      <Filter>Main\Main\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="Game.h">
+      <Filter>Main\Main\Classes</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
